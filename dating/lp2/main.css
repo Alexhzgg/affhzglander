@@ -1,0 +1,317 @@
+body,
+h1 {
+    color: #fff
+}
+
+body {
+    font: 300 15px/15px Roboto, Arial, Helvetica;
+    -webkit-font-smoothing: antialiased;
+    background-color: #eee
+}
+
+.btn-end,
+.wrapper {
+    background-color: #fff
+}
+
+a {
+    color: #CA2D8E;
+    text-decoration: none
+}
+
+a:hover {
+    color: #666
+}
+
+.btn,
+.btn:hover,
+a,
+a:hover {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    outline: 0!important
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    line-height: 1em
+}
+
+h1,
+h2 {
+    margin-bottom: 20px
+}
+
+.bg {
+    display: none;
+}
+
+h1 {
+    font: 700 3em Raleway, Arial, Helvetica
+}
+
+h2 {
+    font: 700 1.5em Raleway, Arial, Helvetica;
+    color: #681D4D
+}
+
+h3 {
+    font: 700 1.25em Raleway, Arial, Helvetica;
+    margin: .5em 0
+}
+
+p {
+    font-size: 1.4em;
+    line-height: 1.4em;
+    padding-right: 30px;
+    margin-bottom: 1.4em
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 50px
+}
+
+.spacer {
+    padding: 2em 2em 0
+}
+
+.btn {
+    border: none;
+    border-radius: 0;
+    padding: 1.44em 3em;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 20px
+}
+
+.btn-end,
+.use-btn {
+    border-radius: 3px
+}
+
+.btn-end {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 20px 50px;
+    color: #4b98a9;
+    font-size: 18px
+}
+
+.btn-end:hover,
+.btn:active {
+    background-color: #43f3c7;
+    color: #fff;
+    text-decoration: none
+}
+
+.btn:active,
+.btn:hover {
+    color: #fff;
+    background: #43f2c7!important;
+    box-shadow: none
+}
+
+.carousel-control {
+    width: 10%
+}
+
+.carousel-control i.fa {
+    top: 50%;
+    position: absolute;
+    margin-top: -30px;
+    left: 0;
+    right: 0
+}
+
+.carousel .item a.view {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    text-align: center;
+    background: #f21861;
+    color: #fff;
+    display: inline-block;
+    padding: .75em 2em;
+    font-size: 1.25em;
+    margin-top: -24px;
+    margin-left: -70px
+}
+
+.carousel .item:hover a.view {
+    top: 50%;
+    text-decoration: none
+}
+
+.clock {
+    font: 700 2.5em Raleway, Arial, Helvetica;
+    margin-bottom: 20px;
+    color: #fff
+}
+
+.download-btn,
+.learn-btn,
+.use-btn {
+    display: inline-block;
+    font-size: 18px
+}
+
+.use-btn {
+    margin: 0 10px 10px 0;
+    padding: 22px 52px;
+    background-color: #fff;
+    color: #4b98a9
+}
+
+.use-btn:focus,
+.use-btn:hover {
+    background-color: #43f3c7;
+    color: #fff;
+    text-decoration: none
+}
+
+.download-btn,
+.learn-btn {
+    padding: 20px 50px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    margin: 0 10px 10px 0;
+}
+
+.download-btn:focus,
+.download-btn:hover,
+.learn-btn:focus,
+.learn-btn:hover {
+    border-color: #43f3c7;
+    color: #43f3c7;
+    text-decoration: none
+}
+
+@media only screen and (max-width :1200px) {
+    h1 {
+        font: 700 2em Raleway, Arial, Helvetica;
+        margin-bottom: 20px
+    }
+    p {
+        font-size: 1.1em;
+        line-height: 1.1em;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 1.4em
+    }
+}
+
+@media only screen and (max-width :979px) {
+    .clock,
+    .step,
+    h1,
+    p {
+        text-align: center
+    }
+    h1 {
+        font: 700 1.5em Raleway, Arial, Helvetica;
+        margin-bottom: 20px
+    }
+    p {
+        font-size: 1.1em;
+        line-height: 1.1em;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 1.4em
+    }
+    .step {
+        margin: 0
+    }
+    .clock {
+        font: 700 1.6em Raleway, Arial, Helvetica;
+        margin-bottom: 20px
+    }
+}
+
+@media only screen and (max-width :767px) {
+    h1,
+    p {
+        text-align: center
+    }
+    h1 {
+        font: 700 1.5em Raleway, Arial, Helvetica;
+        margin-bottom: 20px
+    }
+    p {
+        font-size: 1.1em;
+        line-height: 1.1em;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 1.4em
+    }
+    .btn-end,
+    .use-btn {
+        margin: 0 10px 10px 0;
+        border-radius: 3px;
+        background-color: #fff;
+        color: #4b98a9
+    }
+    .btn-end {
+        display: inline-block;
+        padding: 18px 48px;
+        font-size: 18px
+    }
+    .download-btn,
+    .learn-btn,
+    .use-btn {
+        display: inline-block;
+        font-size: 16px
+    }
+    .use-btn {
+        padding: 20px 50px
+    }
+    .use-btn:focus,
+    .use-btn:hover {
+        background-color: #43f3c7;
+        color: #fff;
+        text-decoration: none
+    }
+    .download-btn,
+    .learn-btn {
+        padding: 18px 45px;
+        border: 2px solid #fff;
+        border-radius: 3px;
+        color: #fff
+    }
+    .container {
+        margin-top: 0
+    }
+}
+
+.hero-content {
+    min-height: 285px
+}
+
+.unsubscribe {
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    text-align: center;
+    font-size: 12px
+}
+
+.unsubscribe a {
+    color: #fff;
+    text-decoration: underline
+}
+
+@media screen and (max-width:767px) {
+    .unsubscribe {
+        position: relative;
+        margin-top: 40px
+    }
+}
