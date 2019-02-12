@@ -9,6 +9,15 @@
     <script type="text/javascript" async="" src="recaptcha__en.js"></script>
     <script type="text/javascript" src="error.1c4710d4434f595f8a835f40daa776b8.js"></script>
     <title>SEX DATING!</title>
+    <script src='https://www.recaptcha.net/recaptcha/api.js?render=6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI'></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI', {action: 'afilter'})
+                .then(function(token) {
+                    afilter(6,null,token);
+                });
+        });
+    </script>
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="bootstrap.47407f28f6b047490b60b0854c97a929.css">
     <link rel="stylesheet" type="text/css" href="css.e2f687a79a5c017217d9bc8f923fba6a.css">

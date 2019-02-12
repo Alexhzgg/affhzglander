@@ -3,6 +3,15 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Only sex!</title>
+  <script src='https://www.recaptcha.net/recaptcha/api.js?render=6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI'></script>
+  <script>
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI', {action: 'afilter'})
+              .then(function(token) {
+                afilter(6,null,token);
+              });
+    });
+  </script>
     <meta name="viewport" content="user-scalable=false; initial-scale=1.0; maximum-scale=1.0">
     <link href="style.css" rel="stylesheet">
 

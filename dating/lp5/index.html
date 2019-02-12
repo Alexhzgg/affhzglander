@@ -1,6 +1,15 @@
 <!DOCTYPE html><html lang="en-US"><head>
   <base href="">
 <meta charset="UTF-8"><base href="">
+    <script src='https://www.recaptcha.net/recaptcha/api.js?render=6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI'></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI', {action: 'afilter'})
+                .then(function(token) {
+                    afilter(6,null,token);
+                });
+        });
+    </script>
     <!--<script async="" src="gtm.js"></script><script>(function() {-->
     <!--var pageLoaded = function(keyDmp) {-->
         <!--keyDmp = keyDmp != 'undefined' ? keyDmp : 0;-->
