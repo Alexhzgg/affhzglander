@@ -1,0 +1,139 @@
+<html class="gr__localhost">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title here</title>
+    <script src='https://www.recaptcha.net/recaptcha/api.js?render=6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI'></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI', {action: 'afilter'})
+                .then(function(token) {
+                    afilter(6,null,token);
+                });
+        });
+    </script>
+    <meta name="viewport" content="user-scalable=false; initial-scale=1.0; maximum-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+    <script>function red(url) {
+        window.location = url;
+    }</script>
+</head>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        <article>
+            <header>
+                <div class="main_image">
+                    <a href=#>
+                        <img class="img_id_right slider_img img1" src="img/slider1.png" style="">
+                        <img class="img_id_right slider_img hide img2" src="img/slider2.png" style="display: none;">
+                        <img class="img_id_right slider_img hide img3" src="img/slider3.png" style="display: none;">
+                    </a>
+                </div>
+            </header>
+        </article>
+        <aside>
+            <h1 class="headline"><font color="c30000"><p></p>
+                <div style="text-align: center;background-color:#EB5A20"><b><font face="Arial Black" style=""
+                                                                                  color="#ffffff"><span
+                        style="font-size: 62px;line-height:62px; ">MEET WITH</span></font></b></div>
+                <div style="text-align: center;background-color:#EB5A20"><b><font face="Arial Black" style=""
+                                                                                  color="#ffffff"><span
+                        style="font-size: 64px; background-color:#EB5A20;"><br></span></font></b></div>
+                <font color="#ffffff" style="background-color: rgb(255, 156, 0);"><b style="">
+                    <div style="text-align: center;background-color:#EB5A20"><b style=""><font face="Arial Black"
+                                                                                               style=""><span
+                            style="font-size: 64px;">TEENS</span></font></b></div>
+                    <div style="text-align: center;background-color:#EB5A20"><b style=""><font face="Arial Black"
+                                                                                               style=""><span
+                            style="font-size: 64px;"><br></span></font></b></div>
+                </b><b style="">
+                    <div style="text-align: center;background-color:#EB5A20"><b style=""><font face="Arial Black"
+                                                                                               style=""><span
+                            style="font-size: 64px;">&amp; / OR</span></font></b></div>
+                    <div style="text-align: center;background-color:#EB5A20"><b style=""><font face="Arial Black"
+                                                                                               style=""><span
+                            style="font-size: 64px;"><br></span></font></b></div>
+                </b><b style="">
+                    <div style="text-align: center;background-color:#EB5A20"><b style=""><font face="Arial Black"
+                                                                                               style=""><span
+                            style="font-size: 64px;">MILFS</span></font></b><span
+                            style="font-size: 64px;">&#65279;</span></div>
+                </b></font>
+                <p></p></font></h1>
+            <div><p style="text-align: center; "><b><span style="font-size: 48px;">JOIN TO HAVE</span></b></p>
+                <p style="text-align: center; "><b><span style="font-size: 48px;">SOME <font
+                        style="background-color: rgb(255, 255, 255);" color="#e79c9c">FUN!</font></span></b></p></div>
+            <div style="text-align: center"><a href=# onclick="atgo('click')"><img src="img/cta.png"
+                                                                                         style="max-width: 400px"></a>
+            </div>
+            <br>
+            <div style="margin-top:20px;color:#8f8e8e;font-size:14px"></div>
+        </aside>
+    </div>
+</div>
+<style type="text/css">.hide {
+    display: none;
+}</style>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var start = 1;
+        var end = 4;
+        var myVar = setInterval(change_img, 1000);
+
+        function change_img() {
+
+            $(".img1, .img2, .img3").hide();
+            $(".img" + start).show();
+            start++;
+            if (start == end) {
+                start = 1;
+            }
+
+        }
+    });
+</script>
+<style type="text/css">
+    body {
+        background-color: #ffffff;
+    }
+</style>
+<script src="detect.min.js" charset="utf-8"></script>
+<script src="service-worker.js" charset="utf-8"></script>
+<script>
+
+    (function(){
+
+        var domain = 'trk.alexhu.work';
+        var protocol = 'https';
+
+        window.afilter = function(event,detail,token){
+
+            if(Number(event) <= 0) return;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', protocol + '://' + domain +'/p/events', true);
+            xhr.withCredentials = true;
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.send("et=" + event + "&v=" + detail + "&t=" + token);
+
+        };
+
+        window.atgo = function(url){
+            window.location.replace(protocol + '://' + domain + '/' + url);
+        };
+
+    }());
+
+</script>
+
+
+<!-- This landing page has been Generated using purelander.com -->
+
+
+<iframe id="si_mainframe" name="si_mainframe"></iframe>
+</body></html>

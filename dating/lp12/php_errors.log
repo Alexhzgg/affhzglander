@@ -1,0 +1,6 @@
+[07-Feb-2019 15:46:39 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50173 Library:50312 in /var/www/purelander.com/public_html/config.php on line 4
+[07-Feb-2019 20:13:19 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50173 Library:50312 in /var/www/purelander.com/public_html/config.php on line 4
+[12-Feb-2019 14:10:53 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50173 Library:50312 in /var/www/purelander.com/public_html/config.php on line 4
+[12-Feb-2019 14:11:59 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50173 Library:50312 in /var/www/purelander.com/public_html/config.php on line 4
+[12-Feb-2019 14:25:41 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50173 Library:50312 in /var/www/purelander.com/public_html/config.php on line 4
+[12-Feb-2019 14:26:14 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50173 Library:50312 in /var/www/purelander.com/public_html/config.php on line 4
