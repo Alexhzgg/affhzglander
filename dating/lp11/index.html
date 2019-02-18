@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swingers Match!</title> <!-- Title goes HERE -->
+    <link rel="stylesheet" type="text/css" href="reset.css"> <!-- Location for reset.css -->
+    <link rel="stylesheet" type="text/css" href="global.css"> <!-- Location of global (framework) CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Location for this lander CSS -->
+    <link href="css.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- Header STARTS HERE aka TOP PART OF SITE -->
+<header>
+    <div class="wrap">
+        <img id="main_pic" src="1.jpg" alt=""> <!-- Location of Main PICTURE -->
+        <div id="headline">
+            <h2>This site likely contains sexually explicit images of someone you know</h2>
+        </div>
+        <h3 id="subheadline">Our members are <span>ONLY</span> looking for casual sexual encounters.</h3>
+        <div id="headline">
+            <h4>All we ask from you is to answer 3 simple questions in order to see if you qualify for our exclusive
+                website. Good luck!</h4>
+        </div>
+    </div>
+    <div class="clear-fix"></div>
+</header>
+<!-- Header ENDS and SECTION STARTS HERE aka BOTTOM PART OF SITE -->
+<section>
+    <div class="wrap">
+        <div id="numbers"> <!-- Numbers Area Starts Here -->
+            <h2>QUESTION:</h2> <!-- Headline QUESTIONS -->
+            <ul>
+                <li id="one" class="active">
+                    <h5>1</h5>
+                </li>
+                <li id="two">
+                    <h5>2</h5>
+                </li>
+                <li id="three">
+                    <h5>3</h5>
+                </li>
+            </ul>
+        </div> <!-- Numbers Area Ends Here -->
+
+        <div id="q1">
+            <h2>Want to meet swingers near you?</h2>    <!-- QUESTION 1 -->
+            <a href="javascript:void(0);" onclick="afilter(1)" id="yes">Yes</a> <!-- Button YES -->
+            <a href="javascript:void(0);" onclick="afilter(1)" id="no">No</a> <!-- Button NO -->
+            <div class="clear-fix"></div>
+        </div>
+        <div id="q2" class="hide">
+            <h2>Can you respect the privacy of other members even if you recognize someone you know?</h2>
+            <!-- QUESTION 2 -->
+            <a href="javascript:void(0);" onclick="afilter(2)" class="button1">Yes</a> <!-- Button YES -->
+            <a href="javascript:void(0);" onclick="afilter(2)" class="button1">No</a> <!-- Button NO -->
+            <div class="clear-fix"></div>
+        </div>
+        <div id="q3" class="hide">
+            <h2>Are you 18 years of age or older?</h2>    <!-- QUESTION 3 -->
+            <a href="javascript:void(0);" onclick="afilter(3)" class="button2">Yes</a> <!-- Button YES -->
+            <a href="javascript:void(0);" onclick="afilter(3)" class="button2">No</a> <!-- Button NO -->
+            <div class="clear-fix"></div>
+        </div>
+        <div id="preload" class="hide">
+            <img src="validator.gif" alt=""> <!-- Location of validating GIF -->
+            <h6>Validating...</h6><!-- VALIDATING -->
+        </div>
+        <div id="q4" class="hide">
+            <!-- Congratulation text goes below -->
+            <h2>Congratulations!<br>You are eligible for our site!</h2>
+            <h3>Respect the wishes and privacy of other members. Our users are normal people, not prostitutes or
+                pornstars.</h3>
+            <!-- in href="" insert link and pass needed php script -->
+            <a href="#" onclick="atgo('click');" id="start">Continue</a> <!-- CONTINUE Button -->
+            <div class="clear-fix"></div>
+        </div>
+        <div id="reject" class="hide">
+            <!-- Rejection text goes below -->
+            <h2>Unfortunately, you do not meet the minimum age requirement to join this exclusive site.</h2>
+            <h1>Thank You</h1>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+
+</section>
+
+<footer style="display: none;">
+    <p>Copyright © 2017 DVIP</p>
+</footer>
+<!-- SECTION ENDS HERE aka BOTTOM PART OF SITE -->
+<!-- JS Scripts go here -->
+<script src="jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="jquery-1.11.1.min.js"><\/script>')</script>
+<script src="show_hide.js"></script>
+<script>
+    $(document).ready(function () {
+        if ($(window).width() < 960) {
+            $('footer').hide();
+
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                    $('footer').fadeIn();
+                } else {
+                    $('footer').fadeOut().hide();
+                }
+            });
+        } else {
+            $('footer').show();
+        }
+        ;
+    });
+</script>
+<script src='https://www.recaptcha.net/recaptcha/api.js?render=6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI'></script>
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI', {action: 'afilter'})
+            .then(function(token) {
+                afilter(6,null,token);
+            });
+    });
+</script>
+<script>
+
+    (function(){
+
+        var domain = 'trk.alexhu.work';
+        var protocol = 'https';
+
+        window.afilter = function(event,detail,token){
+
+            if(Number(event) <= 0) return;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', protocol + '://' + domain +'/p/events', true);
+            xhr.withCredentials = true;
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.send("et=" + event + "&v=" + detail + "&t=" + token);
+
+        };
+
+        window.atgo = function(url){
+            window.location.replace(protocol + '://' + domain + '/' + url);
+        };
+
+    }());
+
+</script>
+</body>
+</html>
