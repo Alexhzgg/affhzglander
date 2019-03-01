@@ -1,0 +1,316 @@
+@import "css.css";
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+:focus {
+    outline: 0
+}
+
+img {
+    border: none
+}
+
+html {
+    font-size: 62.5%;
+    background: #ffe7e7;
+    background: -webkit-linear-gradient(45deg, #ffe7e7 0%, #fefdee 37%, #f7fdff 65%, #f7feff 100%);
+    background: linear-gradient(45deg, #ffe7e7 0%, #fefdee 37%, #f7fdff 65%, #f7feff 100%);
+    min-height: 100%;
+    ‑webkit‑text‑size‑adjust: 100%
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+body {
+    font-family: 'Ubuntu', Arial, Sans-Serif;
+    color: #3b3b3b;
+    font-size: 14px;
+    line-height: 1.1
+}
+
+.header {
+    height: 8.5rem;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.22)
+}
+
+.header:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%
+}
+
+.header h1 {
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.question h2 {
+    display: none;
+    padding: 0 3rem;
+    text-align: center;
+    color: #2c2c2c;
+    font-size: 1.6rem;
+    padding: 1.5rem 0;
+    white-space: nowrap
+}
+
+.question h2 span {
+    display: inline-block;
+    overflow: hidden;
+    animation: type 4s steps(80, end);
+    -webkit-animation: type 4s steps(80, end)
+}
+
+.container {
+    text-align: center;
+    padding-top: 10rem
+}
+
+.center {
+    max-width: 820px;
+    width: 100%;
+    margin: 0 auto
+}
+
+.buttons_block {
+    text-align: center;
+    margin-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.btn {
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 1;
+    margin: 5px;
+    font-size: 2.2rem;
+    padding: 0 10px;
+    width: 28rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background: #88c46f;
+    text-transform: uppercase;
+    border-bottom: 1px solid #7db566;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.btn span {
+    display: inline-block;
+    max-width: 100%
+}
+
+.btn:hover {
+    background: #9ecf8a;
+    background: -webkit-linear-gradient(top, #9ecf8a 0%, #8ac571 100%);
+    background: linear-gradient(to bottom, #9ecf8a 0%, #8ac571 100%)
+}
+
+.step2 .btn {
+    width: 22rem
+}
+
+.step7 .btn {
+    font-size: 1.4rem;
+    line-height: 1
+}
+
+.step5 .btn {
+    width: 22rem
+}
+
+.step_block {
+    background: #FFFFFF;
+    position: relative;
+    box-shadow: 0 0 37px rgba(0, 0, 0, 0.65);
+    padding-bottom: 20px
+}
+
+.photo_block {
+    position: center;
+    padding-top: 20px;
+}
+
+.photo_block img {
+    max-width: 100%
+}
+
+.user_info {
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    left: 0;
+    right: 0
+}
+
+.user_info .name {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px
+}
+
+.user_info span {
+    display: block
+}
+
+.step {
+    display: none;
+    position: relative;
+    z-index: 100
+}
+
+.step1 {
+    display: block
+}
+
+.final_step .step_inner {
+    text-align: left;
+    padding: 2rem
+}
+
+.final_step h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem
+}
+
+.final_step h6 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1.5rem
+}
+
+.final_step li {
+    margin-bottom: 1rem
+}
+
+.progress {
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #e7fcdd
+}
+
+.progress span {
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #aad498;
+    background: -webkit-linear-gradient(top, #aad498 0%, #88c46f 100%);
+    background: linear-gradient(to bottom, #aad498 0%, #88c46f 100%)
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes type {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1030px) {
+    .container {
+        padding-top: 2rem
+    }
+}
+
+@media (max-height: 800px) {
+    .container {
+        padding-top: 2rem
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 45%
+    }
+
+    .btn {
+        width: auto;
+        min-width: 100px
+    }
+
+    .question h2 {
+        word-wrap: break-word;
+        white-space: normal
+    }
+
+    .question h2 span {
+        animation: none;
+        -webkit-animation: none
+    }
+
+    .header h1 {
+        font-size: 2rem
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 38%
+    }
+
+    .container {
+        padding-top: 0
+    }
+
+    .step2 .btn {
+        width: auto;
+        min-width: 50px
+    }
+
+    .step5 .btn {
+        width: auto;
+        min-width: 50px
+    }
+}
